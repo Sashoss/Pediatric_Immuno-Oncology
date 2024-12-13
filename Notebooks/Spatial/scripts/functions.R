@@ -81,6 +81,7 @@ anchorMapping1 <- function(reference, query, feats, query.dims=15, normalization
   return(query)
 }
 
+# Use this as the final  modified. 
 anchorMapping <- function(reference, query, feats, query.dims=15, normalization.method = "LogNormalize", anchor.labels, save.loc=FALSE){
   DefaultAssay(query) <- "Spatial"
 

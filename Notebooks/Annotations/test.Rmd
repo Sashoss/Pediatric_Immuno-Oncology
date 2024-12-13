@@ -1,0 +1,27 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-11-30"
+---
+
+
+```{r}
+seurat_obj <- readRDS("../Clustering/out/clustered_harmony.rds")
+
+```
+
+
+
+
+```{r}
+
+counts_matrix = as.matrix(seurat_obj@assays$RNA@layers$counts) 
+
+```
+
+```{r}
+rownames(counts_matrix) <- rownames(seurat_obj)
+colnames(counts_matrix) <- colnames(seurat_obj)
+
+
+```

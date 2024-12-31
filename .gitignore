@@ -2,4 +2,8 @@
 *.gz
 *.h5
 *.png
-
+*.infercnv_obj
+*.dat
+*.pdf
+*.txt
+*.mcmc_obj

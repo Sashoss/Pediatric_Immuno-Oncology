@@ -1,0 +1,9 @@
+Usage: /var/spool/slurmd/job6175145/slurm_script <input_directory> <output_directory> <R_script_path>
+Job Statistics for 6175145:
+           JobID       User               Start                 End    Elapsed   TotalCPU      State        NodeList 
+---------------- ---------- ------------------- ------------------- ---------- ---------- ---------- --------------- 
+         6175145     axk201 2024-12-27T20:27:13 2024-12-27T20:27:13   00:00:00  00:00.009     FAILED   r1pl-hpcf-h02 
+   6175145.batch            2024-12-27T20:27:13 2024-12-27T20:27:13   00:00:00  00:00.007     FAILED   r1pl-hpcf-h02 
+  6175145.extern            2024-12-27T20:27:13 2024-12-27T20:27:13   00:00:00  00:00.001  COMPLETED   r1pl-hpcf-h02 
+Requested Resources: billing=20,cpu=20,mem=256G,node=1
+Maximum CPU Memory: 0; 	CPU Efficiency: 0.00% of 00:00:00 core-walltime

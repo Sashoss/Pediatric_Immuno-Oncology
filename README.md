@@ -20,18 +20,18 @@ T cell exhaustion is a leading cause contributing to failure of immunotherapy in
          - 2.2.3.4. Functional groups of high rank compounds can be further modulated to reduce off-targets.   
 
 ## SPP1 workflow 
-- 1. Data download - [Notebook](Notebook/Step1_dataset/pull_dataset.ipynb)
-- 2. Generate_Seurat_Object - [Notebook](Notebook/Step2_Seurat_Object/create_seurat.ipynb)
+- 1. Data download - [Notebook](Notebook/Step1_Dataset/pull_dataset.ipynb)
+- 2. Generate_Seurat_Object - [Notebook](Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
 - 3. Data preprocessing - 
    - 3.1. Doubletfinder - [Notebook](Notebook/Step3_Preprocessing/doublet_finder.ipynb)
-   - 3.2. Base filters applied using cell and gene counts - [Notebook](Notebook/Step3_Processing/filter_cells.ipynb)
-- 4. Sample integration - <b>Harmony</b> - [Notebool](Notebook/Step4_Integration/harmony_integration.ipynb)
+   - 3.2. Base filters applied using cell and gene counts - [Notebook](Notebook/Step3_Preprocessing/filter_cells.ipynb)
+- 4. Sample integration - <b>Harmony</b> - [Notebook](Notebook/Step4_Integration/harmony_integration.ipynb)
 - 5. Cell clustering and annotation - [Notebook](Notebook/Step5_Clustering/clustering.ipynb)
 - 6. Copy number variant prediction - <b>Infercnv</b> - [Notebook](Notebook/Step6_Infercnv/infercnv.ipynb)
 - 7. Cell-cell communication - <b>Cellchat</b> - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb)
 - 8. Transcription factor prediction - <b>Pyscenic</b> 
-   - 8.1. [Pyscenic TF prediction scripts](Notebook/Step8_Pyscenic_plots/src) 
-   - 8.2. Plots - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots)
+   - 8.1. [Pyscenic TF prediction scripts](Notebook/Step8_Pyscenic/src) 
+   - 8.2. Plots - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
 - 9. Model SPP1 protein structure using Alphafold, as well as ab-initio modelling.
 - 10. Improve structure model using
    - 10.1. Replica exhange to identify regions sensitive to subtle change in tumor microenvironment.
@@ -55,13 +55,10 @@ T cell exhaustion is a leading cause contributing to failure of immunotherapy in
 
 ## Results
 - 1. Figure 1.
-
 <img src="Manuscript/Fig1.png">
 
 - 2. Figure 2. 
-
 <img src="Manuscript/Fig2.png">
 
--3. Figure 3.
-
+- 3. Figure 3.
 <img src="Manuscript/Fig3.png">

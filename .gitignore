@@ -9,3 +9,4 @@
 *.mcmc_obj
 *.loom
 *.qs
+!Manuscript/*.png

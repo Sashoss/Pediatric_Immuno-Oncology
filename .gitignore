@@ -10,3 +10,7 @@
 *.loom
 *.qs
 !Manuscript/*.png
+.DS_Store
+Notebook/*/.DS_Store
+Notebook/*/*/.DS_Store
+Notebook/*/.ipynb_checkpoints

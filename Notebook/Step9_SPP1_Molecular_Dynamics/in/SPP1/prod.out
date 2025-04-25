@@ -1,0 +1,248 @@
+r1pl-hpcf-g02:rank0.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank0.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank0.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank2.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank3.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank1.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank3.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank2.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank3.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank2.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank1.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank1.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+[1744511591.447608] [r1pl-hpcf-g02:1416879:0]       ib_verbs.h:86   UCX  ERROR ibv_exp_query_device(mlx5_0) returned 38: No space left on device
+[1744511591.447702] [r1pl-hpcf-g02:1416878:0]       ib_verbs.h:86   UCX  ERROR ibv_exp_query_device(mlx5_0) returned 38: No space left on device
+[1744511591.447745] [r1pl-hpcf-g02:1416877:0]       ib_verbs.h:86   UCX  ERROR ibv_exp_query_device(mlx5_0) returned 38: No space left on device
+[1744511591.447841] [r1pl-hpcf-g02:1416880:0]       ib_verbs.h:86   UCX  ERROR ibv_exp_query_device(mlx5_0) returned 38: No space left on device
+r1pl-hpcf-g02:rank1.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank0.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank3.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+r1pl-hpcf-g02:rank2.gmx_mpi: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: r1pl-hpcf-g02
+  Location: mtl_ofi_component.c:513
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+                  :-) GROMACS - gmx mdrun, 2021.3-MODIFIED (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.3-MODIFIED
+Executable:   /export/apps/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1/bin/gmx_mpi
+Data prefix:  /export/apps/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1
+Working dir:  /gpfs0/home1/gdwanglab/axk201/personal_projects/Pediatric_glioblastoma_singelcell/Notebook/Step22_Molecular_dynamics/out/step5_production
+Command line:
+  gmx_mpi mdrun -multidir step5_production_283 step5_production_303 step5_production_333 step5_production_353 -replex 500000 -deffnm remd -nb gpu
+
+
+Back Off! I just backed up remd.log to ./#remd.log.1#
+
+Back Off! I just backed up remd.log to ./#remd.log.1#
+
+Back Off! I just backed up remd.log to ./#remd.log.1#
+
+Back Off! I just backed up remd.log to ./#remd.log.1#
+Reading file remd.tpr, VERSION 2021.3-MODIFIED (single precision)
+Reading file remd.tpr, VERSION 2021.3-MODIFIED (single precision)
+Reading file remd.tpr, VERSION 2021.3-MODIFIED (single precision)
+Reading file remd.tpr, VERSION 2021.3-MODIFIED (single precision)
+Changing nstlist from 20 to 50, rlist from 1.271 to 1.335
+
+Changing nstlist from 20 to 50, rlist from 1.271 to 1.335
+
+Changing nstlist from 20 to 50, rlist from 1.277 to 1.344
+
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 4 ranks on this node:
+  PP:0,PME:0,PP:0,PME:0,PP:1,PME:1,PP:1,PME:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 4 ranks on this node:
+  PP:0,PME:0,PP:0,PME:0,PP:1,PME:1,PP:1,PME:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 4 ranks on this node:
+  PP:0,PME:0,PP:0,PME:0,PP:1,PME:1,PP:1,PME:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+Changing nstlist from 20 to 50, rlist from 1.28 to 1.351
+
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 4 ranks on this node:
+  PP:0,PME:0,PP:0,PME:0,PP:1,PME:1,PP:1,PME:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+
+This is simulation 0 out of 4 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 2 out of 4 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 1 out of 4 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 3 out of 4 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 8 OpenMP threads 
+
+
+Using 8 OpenMP threads 
+
+
+Using 8 OpenMP threads 
+
+
+Using 8 OpenMP threads 
+
+
+Back Off! I just backed up remd.xtc to ./#remd.xtc.1#
+
+Back Off! I just backed up remd.xtc to ./#remd.xtc.1#
+
+Back Off! I just backed up remd.trr to ./#remd.trr.1#
+
+Back Off! I just backed up remd.xtc to ./#remd.xtc.1#
+
+Back Off! I just backed up remd.xtc to ./#remd.xtc.1#
+
+Back Off! I just backed up remd.trr to ./#remd.trr.1#
+
+Back Off! I just backed up remd.edr to ./#remd.edr.1#
+
+Back Off! I just backed up remd.trr to ./#remd.trr.1#
+
+WARNING: This run will generate roughly 4473 Mb of data
+
+
+Back Off! I just backed up remd.trr to ./#remd.trr.1#
+
+Back Off! I just backed up remd.edr to ./#remd.edr.1#
+
+WARNING: This run will generate roughly 4473 Mb of data
+
+
+Back Off! I just backed up remd.edr to ./#remd.edr.1#
+
+WARNING: This run will generate roughly 4473 Mb of data
+
+
+Back Off! I just backed up remd.edr to ./#remd.edr.1#
+
+WARNING: This run will generate roughly 4473 Mb of data
+
+
+WARNING: The temperatures of the different temperature coupling groups are not identical
+
+
+WARNING: The temperatures of the different temperature coupling groups are not identical
+
+
+WARNING: The temperatures of the different temperature coupling groups are not identical
+
+starting mdrun 'Title'
+50000000 steps, 200000.0 ps.
+starting mdrun 'Title'
+50000000 steps, 200000.0 ps.
+starting mdrun 'Title'
+50000000 steps, 200000.0 ps.
+starting mdrun 'Title'
+50000000 steps, 200000.0 ps.
+[r1pl-hpcf-g02:1416872] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[r1pl-hpcf-g02:1416872] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+slurmstepd: error: *** JOB 6857145 ON r1pl-hpcf-g05 CANCELLED AT 2025-04-13T16:29:31 ***
+Job Statistics for 6857145:
+           JobID       User               Start                 End    Elapsed   TotalCPU      State        NodeList 
+---------------- ---------- ------------------- ------------------- ---------- ---------- ---------- --------------- 
+         6857145     axk201 2025-04-12T20:14:16 2025-04-13T16:29:31   20:15:15 3-08:35:18 CANCELLED+   r1pl-hpcf-g05 
+   6857145.batch            2025-04-12T20:14:16 2025-04-13T16:29:32   20:15:16 3-08:35:18  CANCELLED   r1pl-hpcf-g05 
+  6857145.extern            2025-04-12T20:14:16 2025-04-13T16:29:32   20:15:16  00:00.003  COMPLETED   r1pl-hpcf-g05 
+Requested Resources: billing=4,cpu=4,gres/gpu=2,mem=29820M,node=1
+Maximum CPU Memory: 1761.29M; 	CPU Efficiency: 99.47% of 3-09:01:00 core-walltime
+Maximum GPU Memory: 2024M; 	GPU Efficiency: 121%
+
+Writing final coordinates.
+
+Writing final coordinates.
+
+Writing final coordinates.
+
+Writing final coordinates.
+
+NOTE: 14 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+NOTE: 11 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+NOTE: 11 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+NOTE: 11 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+GROMACS reminds you: "It was something to at least have a choice of nightmares" (Joseph Conrad)
+
+Job Statistics for 6857149:
+           JobID       User               Start                 End    Elapsed   TotalCPU      State        NodeList 
+---------------- ---------- ------------------- ------------------- ---------- ---------- ---------- --------------- 
+         6857149     axk201 2025-04-12T22:33:06 2025-04-15T06:09:00 2-07:35:54 9-04:27:09  COMPLETED   r1pl-hpcf-g02 
+   6857149.batch            2025-04-12T22:33:06 2025-04-15T06:09:00 2-07:35:54 9-04:27:09  COMPLETED   r1pl-hpcf-g02 
+  6857149.extern            2025-04-12T22:33:06 2025-04-15T06:09:00 2-07:35:54  00:00.001  COMPLETED   r1pl-hpcf-g02 
+Requested Resources: billing=4,cpu=4,gres/gpu=2,mem=29820M,node=1
+Maximum CPU Memory: 1728.05M; 	CPU Efficiency: 99.13% of 9-06:23:36 core-walltime
+Maximum GPU Memory: 1580M; 	GPU Efficiency: 102%

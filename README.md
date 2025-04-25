@@ -1,36 +1,20 @@
-# Pediatric_glioblastoma_singelcell
+# Targeting the SPP1–CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics Approaches
+### Authors
+- Shiwani Limbu, Contribution - Single cell data analysis and inference
+- Ambuj Kumar, Contribution - Structural bioinformatics analysis and inference
 
-
-## Things to do
-1. Run antibody modelling
-
-
-# Antibody modelling
-1. Dock SPP1 resi 120-14 to anti-osteopontin antibody 23C3 (PDB ID: 3CXD)
-2. Identify 23C3 heavy and light chains using [PyIgClassify2](https://dunbrack2.fccc.edu/PyIgClassify2/Search/pdb.aspx). Make sure to apply for PyIgClassify2 database download request by filling their form. Each DB access is granted to a single user. Therefore, dont share it with others. Carefully read its usage policy. 
-3. Run antibody designer 
-antibody_designer.linuxgccrelease \
-        -s ./in/SPP1_antobody_bound.pdb \
-        -seq_design_cdrs H1 H2 H3 H4 L1 L2 L3 L4 \
-        -light_chain kappa \
-        -nstruct 2500 \
-        -mintype relax \
-        -relax:default_repeats 2 \
-        -seq_design_profile_samples 30 \
-        -run:timer true \
-        -ab_template_db_path ./db \
-        -out:prefix spp1_rabd_$i \
-        -out:file:scorefile ./out/spp1_rabd_score_$i.sc \
-        -out:path:all ./out/seq_evolve_$i &
- 
+# Abstract
+Pediatric high-grade glioma (pHGG) is a highly aggressive brain tumor characterized by transcriptional plasticity and an immunosuppressive microenvironment. Single-cell RNA-seq analysis revealed diverse malignant and immune cell populations, with tumor-associated macrophages (TAMs) emerging as the primary source of SPP1 (osteopontin), a glycoprotein that suppresses T cell activation through CD44 binding. Cell-cell communication analysis identified the SPP1–CD44 axis as a dominant immunosuppressive pathway in the tumor microenvironment. Despite extensive transcription factor screening, no strong regulators of SPP1 were identified, suggesting regulation occurs via alternative mechanisms. To assess structural features of SPP1, replica exchange molecular dynamics simulations were performed, revealing that the CD44-binding domain is conformationally stable. Phosphorylation at Ser169, a conserved site, further stabilized this region, suggesting a potential mechanism for enhanced CD44 interaction. To disrupt this axis, among 2,500 variants of anti-SPP1 23C3 antibody, a lead candidate with improved predicted affinity and minimal sequence divergence was identified. Together, this study integrates transcriptomic and structural bioinformatics approaches to target SPP1–CD44 axis in pHGG.
 
 # Results
 
 ## Fig 1. 
-- a) Unsupervised clustering and UMAP projection identified eleven major cell populations, including malignant glial‐lineage states (MES-like, MES-AC-like, MES-AC-like Cycling, MES-APC-like, OPC-like), lymphoid cells (T cells, NK cells, Naïve B), and myeloid cells segregating into two macrophage subsets (MGD Macrophage, MGD TAM) plus a Microglia‐derived TAM cluster (MD Macrophage). A small “Undetermined” cluster likely represents doublets or rare stromal elements.
+- a) Unsupervised clustering and UMAP projection identified ten major cell populations, including malignant glial‐lineage states (MES-like, MES-AC-like, MES-AC-like Cycling, MES-APC-like, OPC-like), lymphoid cells (T cells, NK cells, Naïve B), and myeloid cells segregating into two macrophage subsets (MGD Macrophage, MGD TAM) plus a Microglia‐derived TAM cluster (MD Macrophage). A small “Undetermined” cluster likely represents rare stromal elements.
 
 - b) Infercnv results
-We next applied inferCNV to detect large-scale chromosomal copy‐number alterations at single‐cell resolution, using T cells, NK cells, and Naïve B cells as a diploid reference. The resulting CNV heatmap (Fig. 1b) revealed that all malignant glial clusters display characteristic alterations—such as chromosome 7 gain and chromosome 10 loss—while immune clusters show flat profiles consistent with a normal karyotype. Among tumor states, the MES-like and MES-AC-like Cycling populations exhibited the most pronounced copy gains (for example, focal amplification on 7p), underscoring their heightened genomic instability relative to OPC- and APC-like cells.
+InferCNV was applied to detect large-scale chromosomal copy‐number alterations at single‐cell resolution, using T cells, NK cells, and Naïve B cells as a diploid reference. The resulting CNV heatmap (Fig. 1b) revealed that all malignant glial clusters display characteristic aberration-such as chromosome 7 gain, as well as chromosome 1, 6, and 13 loss - while immune clusters show flat profiles consistent with a normal karyotype. 
+
+<img src="Manuscript/Fig1.png">
 
 - c) Marker dotplot
 Cell type marker expression dotplot. 
@@ -67,26 +51,29 @@ Cell type marker expression dotplot.
          - d-2.3.3) Activation of nuclear chromosome, nuclear replication fork, heterochromatin, DNA repair complex indicates S-phase DNA replication activity and DNA damage sensing/repair, common in rapidly proliferating cells under stress, such as tumor cells.
 
 
-<img src="Manuscript/Fig1.png">
+<hr>
 
 
 ## Fig 2.
-- a) Outgoing signal heatmap
-- b) Incoming signal heatmap
-- c) Outgoing signal dotplot
-- d) Incoming signal dotplot
-- e) Polarized microglia derived tumor associated macrophage outgoing signals
-- f) SPP1 pathway signal communication heatmap
+- a) Cellchat outgoing signal heatmap. SPP1 ranked within the top ligands secreted by MGD TAM. 
+- b) Cellchat incoming signal heatmap. SPP1 is the top incoming signal in T cells.
+- c) Cellchat based cell-cell communication inference signalling. This plot confirms that the MGD TAM - T cell axis via SPP1-CD44 is the strongest single ligand–receptor interaction in the microenvironment, exceeding even canonical cytokine pathways such as CCL3-CCR1 or IL1B–IL1R1. 
+- e) Network topology mapping reveales that MGD TAMs and MGD transitioning macrophages are the dominant senders of SPP1 signals, with negligible autocrine SPP1-CD44 loops in tumor cells. 
+- f) Violin plots of SPP1 transcript abundance show that MGD TAMs and MGD transitioning macrophage cells express SPP1 at levels 3-10-fold higher than other immune and cancer cells.
 
 <img src="Manuscript/Fig2.png">
 
+<hr>
+
 ## Fig 3.
-- a) TF Regulon activity
-- b) TF expression
-- c) MAFB feature plot 
-- d) MAFB violin plot
+- a) TF Regulon activity profile of SPP1 transcription factors predicted by pyscenic. Size of the dot shows regulon activity and color shows gene expression correlation of these TFs with SPP1 gene expression. No meaningful evidence of SPP1 regulation is observed.  
+- b) TF gene expression dotplot. MAFB is the only TF that shows moderate to high expression in Macrophages. 
+- c) MAFB feature plot. Shows moderate to high expression in Macrophages.  
+- d) MAFB violin plot. Shows moderate to high expression in Macrophages. 
 
 <img src="Manuscript/Fig3.png">
+
+<hr>
 
 ## Fig 4.
 - a) Root mean squared fluctuation of SPP1 protein residues under replica exchange molecular dynamics simulation at temperatures 283.15K, 303.15K, 333.15K, and 353.15K 
@@ -105,7 +92,6 @@ Cell type marker expression dotplot.
 
 
 
-
-### Cuurated molecules that can cross blood brain barrier
+# Molecules capable of passing through blood brain barrier
 - Manuscript - [https://www.nature.com/articles/s41597-021-01069-5](https://www.nature.com/articles/s41597-021-01069-5)
 - Github - [https://github.com/theochem/B3DB/tree/main](https://github.com/theochem/B3DB/tree/main)

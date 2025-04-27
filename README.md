@@ -101,10 +101,10 @@ Cell type marker expression dotplot.
 <img src="Manuscript/Fig4.png">
 
 ### Large RMSF images
-- 1a)
+- 1a) Root mean squared fluctuation of SPP1 protein residues under replica exchange molecular dynamics simulation starting at temperatures 283.15K (black), 303.15K (red), 333.15K (green), and 353.15K (blue). Residue range 42-48 is 23C3 antibody binding motif of SPP1, residue range 162-168 is 2K1 and C2K1 binding motif of SPP1, and residue range 121-140 is CD44 binding motif of SPP1.
 <img src="Manuscript/rmsf_stREMD.jpg">
 
-- 1f)
+- 1f) Root mean squared fluctuation quadratic mean of normal SPP1 (black) and residue 169 phosphorylated SPP1 (red), showing increase in stability in SPP1-CD44 binding interface upon phosphorylation.
 <img src="Manuscript/rmsf_minima.png">
 
 <hr>

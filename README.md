@@ -19,7 +19,7 @@ Pediatric high-grade glioma (pHGG) is a highly aggressive brain tumor characteri
 - 8. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb)
 - 9. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
 - 10. Molecular dynamics simulation - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)
-- 11. Rosetta antibody design - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh), [esm2 embedding based AB selected](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
+- 11. Rosetta antibody design - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh), [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
 - 12. Utility scripts - [dir](Notebook/Utility)
 
 # Results

@@ -100,6 +100,13 @@ Cell type marker expression dotplot.
 - f) Root mean squared fluctuation quadratic mean of normal SPP1 (black) and residue 169 phosphorylated SPP1 (red), showing increase in stability in SPP1-CD44 binding interface upon phosphorylation.
 <img src="Manuscript/Fig4.png">
 
+### Large RMSF images
+- 1a)
+<img src="Manuscript/rmsf_stREMD.jpg">
+
+- 1f)
+<img src="Manuscript/rmsf_minima.png">
+
 <hr>
 
 ## Fig 5.

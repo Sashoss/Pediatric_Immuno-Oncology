@@ -100,12 +100,15 @@ Cell type marker expression dotplot.
 - f) Root mean squared fluctuation quadratic mean of normal SPP1 (black) and residue 169 phosphorylated SPP1 (red), showing increase in stability in SPP1-CD44 binding interface upon phosphorylation.
 <img src="Manuscript/Fig4.png">
 
+<hr>
+
 ## Fig 5.
 - a) UMAP showing 2500 new antibodies generated using Rosetta antibody design tool and the native 23C3 antibody. Color of the dots highlight free energy required to seperate SPP1 from the corresponding antibody variant. UMAP is calculated using cosine distance between sequence embedding of CDR sequence. 
 - b) Hexplot showing 2500 new antibodies free energy required to seperate SPP1 from the corresponding antibody variant and distance between complete CDR sequence.
 - c) Most stable antibody protein structure (grey) bonded to SPP1 protein structure (wheat). Blue spheres are the residue changes between the most stable Antibody and 23C3 in light chain and red spheres are the residue changes between the most stable Antibody and 23C3 in heavy chain.
 <img src="Manuscript/Fig5.png">
 
+<hr>
 
 # Other resources
 ## 1. Molecules capable of passing through blood brain barrier

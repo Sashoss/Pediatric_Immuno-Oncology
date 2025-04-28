@@ -8,11 +8,11 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 ## Project 1: Targeting the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics 
 
 ### <b>Manuscript under review</b> 
-Manuscript link - [For NCH Employees only](https://nationwidechildrens-my.sharepoint.com/:w:/r/personal/ambuj_kumar_nationwidechildrens_org/Documents/SPP1_Project/Manuscript.docx?d=w536bef566c474ab9b5c1bbe746b12022&csf=1&web=1&e=OKO4T6) 
+Manuscript link - [For Nationwide Children's Hospital employees only](https://nationwidechildrens-my.sharepoint.com/:w:/r/personal/ambuj_kumar_nationwidechildrens_org/Documents/SPP1_Project/Manuscript.docx?d=w536bef566c474ab9b5c1bbe746b12022&csf=1&web=1&e=OKO4T6) 
 
 ### Authors
-- Shiwani Limbu 
-- Ambuj Kumar
+- Shiwani Limbu, University of California Merced & University of Kansas Medical Center 
+- Ambuj Kumar, Nationwide Children's Hospital
 
 ## Scripts and workflows
 - 1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)

@@ -13,10 +13,6 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 - Shiwani Limbu 
 - Ambuj Kumar
 
-### Read full manuscript: [Manuscript word doc](Manuscript/Manuscript.docx)
-
-## Abstract
-Pediatric high-grade glioma (pHGG) is a highly aggressive brain tumor characterized by transcriptional plasticity and an immunosuppressive microenvironment. Single-cell RNA-seq analysis revealed diverse malignant and immune cell populations, with tumor-associated macrophages (TAMs) emerging as the primary source of SPP1 (osteopontin), a glycoprotein that suppresses T cell activation through CD44 binding. Cell-cell communication analysis identified the SPP1–CD44 axis as a dominant immunosuppressive pathway in the tumor microenvironment. Despite extensive transcription factor screening, no strong regulators of SPP1 were identified, suggesting regulation occurs via alternative mechanisms. To assess structural features of SPP1, replica exchange molecular dynamics simulations were performed, revealing that the CD44-binding domain is conformationally stable. Phosphorylation at Ser169, a conserved site, further stabilized this region, suggesting a potential mechanism for enhanced CD44 interaction. To disrupt this axis, among 2,500 variants of anti-SPP1 23C3 antibody, a lead candidate with improved predicted affinity and minimal sequence divergence was identified. Together, this study integrates transcriptomic and structural bioinformatics approaches to target SPP1–CD44 axis in pHGG.
 
 ## Methods
 - 1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)

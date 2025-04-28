@@ -1,4 +1,4 @@
-# Targeting the SPP1–CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics Approaches
+# Targeting the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics Approaches
 
 ## <b>Manuscript under review</b>
 

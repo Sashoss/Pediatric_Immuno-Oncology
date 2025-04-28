@@ -3,12 +3,14 @@
 - 2. Create a database of small molecules that may cross blood-brain barrier and help target certain cytokine-receptor pairs.
 - 3. Apply directed evolution of antibodies to effectively target cytokines of interest and minimize off-target hits. 
 
+Please feel free to reach out to us is you find this project interesting, and if you would want to contribute. 
+
 # Project 1: Targeting the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics 
 
 ## <b>Manuscript under review</b>
 
 ### Authors
-- Shiwani Limbu
+- Shiwani Limbu 
 - Ambuj Kumar
 
 ### Read full manuscript: [Manuscript word doc](Manuscript/Manuscript.docx)

@@ -1,5 +1,5 @@
 # Project long-term goal:
-- 1. Collect and process publicly available single cell and bulk transcriptomic, and structural bioinformatics data to explore, organize, and annotate key pathways and cytokines associated with immune suppression in Pediatric High Grade Glioma (pHGG). 
+- 1. Collect and process publicly available single cell, bulk transcriptomic, and structural bioinformatics data to explore, organize, and annotate key pathways and cytokines associated with immune suppression in Pediatric High Grade Glioma (pHGG). 
 - 2. Create a database of small molecules that may cross blood-brain barrier and help target certain cytokine-receptor pairs.
 - 3. Apply directed evolution of antibodies to effectively target cytokines of interest and minimize off-target hits. 
 

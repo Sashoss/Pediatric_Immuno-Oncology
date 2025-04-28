@@ -13,8 +13,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 - Shiwani Limbu 
 - Ambuj Kumar
 
-
-## Methods
+## Scripts and workflows
 - 1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)
 - 2. Create seurat object - [Notebook](/Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
 - 3. Doublet finder - [Notebook](/Notebook/Step3_Preprocessing/doublet_finder.ipynb) 

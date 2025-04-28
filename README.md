@@ -1,4 +1,9 @@
-# Targeting the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics Approaches
+# Project long-term goal:
+- 1. Collect and process publicly available single cell and bulk transcriptomic, and structural bioinformatics data to explore, organize, and annotate key pathways and cytokines associated with immune suppression in Pediatric High Grade Glioma. 
+- 2. Create a database of small molecules that may cross blood-brain barrier and help target certain cytokine-receptor pairs.
+- 3. Apply directed evolution of antibodies to effectively target cytokines of interest and minimize off-target hits. 
+
+# Project 1: Targeting the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics 
 
 ## <b>Manuscript under review</b>
 

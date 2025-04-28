@@ -15,10 +15,10 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
 ### Read full manuscript: [Manuscript word doc](Manuscript/Manuscript.docx)
 
-# Abstract
+## Abstract
 Pediatric high-grade glioma (pHGG) is a highly aggressive brain tumor characterized by transcriptional plasticity and an immunosuppressive microenvironment. Single-cell RNA-seq analysis revealed diverse malignant and immune cell populations, with tumor-associated macrophages (TAMs) emerging as the primary source of SPP1 (osteopontin), a glycoprotein that suppresses T cell activation through CD44 binding. Cell-cell communication analysis identified the SPP1–CD44 axis as a dominant immunosuppressive pathway in the tumor microenvironment. Despite extensive transcription factor screening, no strong regulators of SPP1 were identified, suggesting regulation occurs via alternative mechanisms. To assess structural features of SPP1, replica exchange molecular dynamics simulations were performed, revealing that the CD44-binding domain is conformationally stable. Phosphorylation at Ser169, a conserved site, further stabilized this region, suggesting a potential mechanism for enhanced CD44 interaction. To disrupt this axis, among 2,500 variants of anti-SPP1 23C3 antibody, a lead candidate with improved predicted affinity and minimal sequence divergence was identified. Together, this study integrates transcriptomic and structural bioinformatics approaches to target SPP1–CD44 axis in pHGG.
 
-# Methods
+## Methods
 - 1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)
 - 2. Create seurat object - [Notebook](/Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
 - 3. Doublet finder - [Notebook](/Notebook/Step3_Preprocessing/doublet_finder.ipynb) 
@@ -32,9 +32,9 @@ Pediatric high-grade glioma (pHGG) is a highly aggressive brain tumor characteri
 - 11. Rosetta antibody design - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh), [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
 - 12. Utility scripts - [dir](Notebook/Utility)
 
-# Results
+## Results
 
-## Fig 1. 
+### Fig 1. 
 - a) Unsupervised clustering and UMAP projection identified ten major cell populations, including malignant glial‐lineage states (MES-like, MES-AC-like, MES-AC-like Cycling, MES-APC-like, OPC-like), lymphoid cells (T cells, NK cells, Naïve B), and myeloid cells segregating into two macrophage subsets (MGD Macrophage, MGD TAM) plus a Microglia‐derived TAM cluster (MD Macrophage). A small “Undetermined” cluster likely represents rare stromal elements.
 
 - b) Infercnv results
@@ -80,7 +80,7 @@ Cell type marker expression dotplot.
 <hr>
 
 
-## Fig 2.
+### Fig 2.
 - a) Cellchat outgoing signal heatmap. SPP1 ranked within the top ligands secreted by MGD TAM. 
 - b) Cellchat incoming signal heatmap. SPP1 is the top incoming signal in T cells.
 - c) Cellchat based cell-cell communication inference signalling. This plot confirms that the MGD TAM - T cell axis via SPP1-CD44 is the strongest single ligand–receptor interaction in the microenvironment, exceeding even canonical cytokine pathways such as CCL3-CCR1 or IL1B–IL1R1. 
@@ -91,7 +91,7 @@ Cell type marker expression dotplot.
 
 <hr>
 
-## Fig 3.
+### Fig 3.
 - a) TF Regulon activity profile of SPP1 transcription factors predicted by pyscenic. Size of the dot shows regulon activity and color shows gene expression correlation of these TFs with SPP1 gene expression. No meaningful evidence of SPP1 regulation is observed.  
 - b) TF gene expression dotplot. MAFB is the only TF that shows moderate to high expression in Macrophages. 
 - c) MAFB feature plot. Shows moderate to high expression in Macrophages.  
@@ -101,7 +101,7 @@ Cell type marker expression dotplot.
 
 <hr>
 
-## Fig 4.
+### Fig 4.
 - a) Root mean squared fluctuation of SPP1 protein residues under replica exchange molecular dynamics simulation at temperatures 283.15K, 303.15K, 333.15K, and 353.15K 
 - b) Energy landscape based conformation sampling from replicate exchange runs
 - c) Most stable conformation across all 4 replica exchange trajectories. CD44 binding interface (residue 121-140) is shown in orange, other known SPP1 antibody binding interface shown in blue, and cyan.
@@ -110,7 +110,7 @@ Cell type marker expression dotplot.
 - f) Root mean squared fluctuation quadratic mean of normal SPP1 (black) and residue 169 phosphorylated SPP1 (red), showing increase in stability in SPP1-CD44 binding interface upon phosphorylation.
 <img src="Manuscript/Fig4.png">
 
-### Large RMSF images
+#### Large RMSF images
 - 4a) Root mean squared fluctuation of SPP1 protein residues under replica exchange molecular dynamics simulation starting at temperatures 283.15K (black), 303.15K (red), 333.15K (green), and 353.15K (blue). Residue range 42-48 is 23C3 antibody binding motif of SPP1, residue range 162-168 is 2K1 and C2K1 binding motif of SPP1, and residue range 121-140 is CD44 binding motif of SPP1.
 <img src="Manuscript/rmsf_stREMD.jpg">
 
@@ -119,7 +119,7 @@ Cell type marker expression dotplot.
 
 <hr>
 
-## Fig 5.
+### Fig 5.
 - a) UMAP showing 2500 new antibodies generated using Rosetta antibody design tool and the native 23C3 antibody. Color of the dots highlight free energy required to seperate SPP1 from the corresponding antibody variant. UMAP is calculated using cosine distance between sequence embedding of CDR sequence. 
 - b) Hexplot showing 2500 new antibodies free energy required to seperate SPP1 from the corresponding antibody variant and distance between complete CDR sequence.
 - c) Most stable antibody protein structure (grey) bonded to SPP1 protein structure (wheat). Blue spheres are the residue changes between the most stable Antibody and 23C3 in light chain and red spheres are the residue changes between the most stable Antibody and 23C3 in heavy chain.

@@ -1,7 +1,6 @@
 *.rds
 *.gz
 *.h5
-*.png
 *.infercnv_obj
 *.dat
 *.pdf
@@ -9,7 +8,6 @@
 *.mcmc_obj
 *.loom
 *.qs
-!Manuscript/*.png
 .DS_Store
 Notebook/*/.DS_Store
 Notebook/*/*/.DS_Store

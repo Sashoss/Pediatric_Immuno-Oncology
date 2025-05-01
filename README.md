@@ -25,7 +25,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 2. <b>Identify cell types present in pHGG single cell data</b> - Here, multiple clean preprocessed sample data is then integrated, clustered, annotated to identify various tumor and immune cell types present within it. 
    - 2.1. Harmony Integration - [Notebook](/Notebook/Step4_Integration/harmony_integration.ipynb)
    - 2.2. Clustering and cell annotation - [Notebook](/Notebook/Step5_Clustering/clustering.ipynb)
-<img src="Notebook/Step5_Clustering/out/umap_base.png" alt="UMAP plot" width="400" height="300">
+<img src="Notebook/Step5_Clustering/out/umap_base.png" alt="UMAP plot" width="500" height="400">
 
    - 2.3. InferCNV - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
 

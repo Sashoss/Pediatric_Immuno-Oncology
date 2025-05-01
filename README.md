@@ -114,7 +114,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       |------------------|--------------|-------------|-------------------|--------------------|
       | Heavy chain      |    II        |   56-70     |  NNYTTYYADSVKDRF  |        60.00       |
       | Heavy chain      |    I         |  172-180    |  VLQSDLYTL        |        55.55       |
-      | Heavy chain      |    II        |  146-160    |  VKWKIDGAERGNGVL  |        60.00       |
+      | Light chain      |    II        |  146-160    |  VKWKIDGAERGNGVL  |        60.00       |
       ```
  
    - 4.4. <i><b>Hu23C3-v1-SPP1 binding affinity test</b></i> - Check if we significantly loose SPP1 binding affinity upon humanization of 23C3-v1 

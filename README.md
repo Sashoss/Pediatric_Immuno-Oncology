@@ -63,7 +63,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
 3. <b>Identify SPP1 cytokine activity and its regulatory features in pHGG.</b> This step enables us to identify active immunosupressive cytokine-receptor signals in pHGG, and transcription factors that may likely regulate it. Identifying these TFs can help us design specific antibody or small molecules to inhibit it.
    - 3.1. <i><b>Cellchat cell-cell communication</b></i> - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb): Clearly showing that TAM SPP1 to T cell CD44 signalling is active in pHGG. 
-   <img src="Notebook/Step7_Cellchat/out/SPP1_cellchat_netVisual_aggregate.png" alt="SPP1 com" width="400" height="320">
+   <img src="Notebook/Step7_Cellchat/out/SPP1_cellchat_netVisual_aggregate.png" alt="SPP1 com" width="500" height="360">
 
    - 3.2. <i><b>Pyscenic transcription factor prediction</b></i> - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb): Here, in the first image, dot size shows predicted SPP1 TFs Regulon Specificity Score (RSS) across all cell types, and the color represents TF expression in the corresponding cell type. In second image, size of the dot represents percentage of cells expressing corresponding TF gene expression within a given cell type and color represents average gene expression. Combining these two images, we can easily conclude that no single TF can be assigned as a primary regulator of SPP1 gene expression in TAMs.
    <p align="center">

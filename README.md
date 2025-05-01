@@ -36,8 +36,8 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
    - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
    <p align="center">
-      <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="300" height="270" style="display: inline-block; margin-right: 10px;">
-      <img src="Notebook/Step8_Pyscenic/out/TF_rss_correlation.png" alt="TF correl plot" width="300" height="270" style="display: inline-block;">
+      <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="350" height="20" style="display: inline-block; margin-right: 10px;">
+      <img src="Notebook/Step8_Pyscenic/out/TF_rss_correlation.png" alt="TF correl plot" width="350" height="280" style="display: inline-block;">
    </p>
 
 4. <b>Build antibody to target SPP1</b> - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 

@@ -76,7 +76,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
    - 4.1. <i><b>Molecular dynamics simulation</b></i> - Build and optimize SPP1 protein structure.
       - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)
       - [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
-      <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/rmsf_re.png" alt="RE RMSF" width="700" height="400" style="display: inline-block;">
+      <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/rmsf_re.png" alt="RE RMSF" width="700" height="350" style="display: inline-block;">
 
    - 4.2. <i><b>Rosetta antibody design (build 23C3-v1)</b></i> - Build an antibody to target CD44 binding region of SPP1 protein.
       - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)

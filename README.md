@@ -83,6 +83,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
    - 4.2. <i><b>Rosetta antibody design (23C3-v1)</b></i> 
       - Build an antibody to target CD44 binding region of SPP1 protein. Lets first identify CDR regions in murine 23C3 antibody. Below are the list predicted CDRs,
+      ```plaintext
       | Chain          | CDR region | Residue     |
       |----------------|------------|-------------|
       | Heavy chain    |    H1      |   23-35     |
@@ -93,6 +94,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       | Light chain    |    L2      |   49-53     |
       | Light chain    |    L3      |   89-97     |
       | Light chain    |    L4      |   66-71     |
+      ```
 
       - Here, 2500 antibody variants of murine anti-SPP1 antibody 23C3 was generated using Rosetta antibody modelling workflow. Top hit variant was picked using top binding affinity with SPP1 and least sequence divergence from 23C3. We will be denoting it as 23C3-v1 from hereon. 
       - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)

@@ -17,24 +17,24 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
 ## Scripts and workflows
 1. <b>Collect and clean pHGG single cell data</b> - Here we collect single cell data from public database and preprocess it for our specific study.   
-   - 1.1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)
-   - 1.2. Create seurat object - [Notebook](/Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
-   - 1.3. Doublet finder - [Notebook](/Notebook/Step3_Preprocessing/doublet_finder.ipynb) 
-   - 1.4. Preprocessing - [Notebook](/Notebook/Step3_Preprocessing/filter_cells.ipynb)
+   - 1.1. <i><b>Single cell data collection</b></i> - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)
+   - 1.2. <i><b>Create seurat object</b></i> - [Notebook](/Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
+   - 1.3. <i><b>Doublet finder</b></i> - [Notebook](/Notebook/Step3_Preprocessing/doublet_finder.ipynb) 
+   - 1.4. <i><b>Preprocessing</b></i> - [Notebook](/Notebook/Step3_Preprocessing/filter_cells.ipynb)
 
 2. <b>Identify cell types present in pHGG single cell data</b> - Here, multiple clean preprocessed sample data is then integrated, clustered, annotated to identify various tumor and immune cell types present within it. 
-   - 2.1. Harmony Integration - [Notebook](/Notebook/Step4_Integration/harmony_integration.ipynb)
-   - 2.2. Clustering and cell annotation - [Notebook](/Notebook/Step5_Clustering/clustering.ipynb)
+   - 2.1. <i><b>Harmony Integration</b></i> - [Notebook](/Notebook/Step4_Integration/harmony_integration.ipynb)
+   - 2.2. <i><b>Clustering and cell annotation</b></i> - [Notebook](/Notebook/Step5_Clustering/clustering.ipynb)
    <img src="Notebook/Step5_Clustering/out/umap_base.png" alt="UMAP plot" width="500" height="400">
 
-   - 2.3. InferCNV - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
+   - 2.3. <i><b>InferCNV</i></b> - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
    <img src="Notebook/Step6_Infercnv/out/infercnv.png" alt="Infercnv plot" width="600" height="450">
 
 3. <b>Identify SPP1 cytokine activity and its regulatory features in pHGG.</b> This step enables us to identify active immunosupressive cytokine-receptor signals in pHGG, and transcription factors that may likely regulate it. Identifying these TFs can help us design specific antibody or small molecules to inhibit it.
-   - 3.1. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb): Clearly showing that TAM SPP1 to T cell CD44 signalling is active in pHGG. 
+   - 3.1. <i><b>Cellchat cell-cell communication</b></i> - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb): Clearly showing that TAM SPP1 to T cell CD44 signalling is active in pHGG. 
    <img src="Notebook/Step7_Cellchat/out/SPP1_cellchat_netVisual_aggregate.png" alt="SPP1 com" width="300" height="270">
 
-   - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb): Here, in the first image, dot size shows predicted SPP1 TFs Regulon Specificity Score (RSS) across all cell types, and the color represents TF expression in the corresponding cell type. In second image, size of the dot represents percentage of cells expressing corresponding TF gene expression within a given cell type and color represents average gene expression. Combining these two images, we can easily conclude that no single TF can be assigned as a primary regulator of SPP1 gene expression in TAMs.
+   - 3.2. <i><b>Pyscenic transcription factor prediction</b></i> - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb): Here, in the first image, dot size shows predicted SPP1 TFs Regulon Specificity Score (RSS) across all cell types, and the color represents TF expression in the corresponding cell type. In second image, size of the dot represents percentage of cells expressing corresponding TF gene expression within a given cell type and color represents average gene expression. Combining these two images, we can easily conclude that no single TF can be assigned as a primary regulator of SPP1 gene expression in TAMs.
    <p align="center">
       <img src="Notebook/Step8_Pyscenic/out/TF_rss_correlation.png" alt="TF correl plot" width="350" height="250" style="display: inline-block;">
       <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="350" height="250" style="display: inline-block; margin-right: 10px;">

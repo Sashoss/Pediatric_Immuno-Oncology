@@ -117,9 +117,11 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       | Light chain      |    II        |  146-160    |  VKWKIDGAERGNGVL  |        60.00       |
       ```
  
-   - 4.4. <i><b>Hu23C3-v1-SPP1 binding affinity test</b></i> - Check if we significantly loose SPP1 binding affinity upon humanization of 23C3-v1 
+   - 4.4. <i><b>Hu23C3-v1-SPP1 binding affinity test</b></i> - Lets check if we significantly loose SPP1 binding affinity upon humanization of 23C3-v1 
       - [MD simulation of Hu23C3-v1 docked with SPP1 and 23C3-v1 docked with SPP1](Notebook/Step12_Antibody_Molecular_Dynamics/simulate.ipynb)
       - [Binding affinity test](Notebook/Step13_Binding_Affinity_MMPBSA/mmpbsa.sh)
+      - Binding affinity results across all three independent trajectories indicate no significant change in binding affinity of Hu23C3-v1 with SPP1 as compared to 23C3-v1.
+      <img src="Notebook/Step13_Binding_Affinity_MMPBSA/out/boxplot_binding_energy.png" alt="SPP1 minima" width="400" height="450">
 
 5. <b>Utility scripts<b> - [dir](Notebook/Utility)
 

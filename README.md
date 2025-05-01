@@ -81,7 +81,20 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       - Most stable and dominant conformation across all 4 trajectories were picked for downstream analysis.
       <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/SPP1_minima.png" alt="SPP1 minima" width="300" height="450">
 
-   - 4.2. <i><b>Rosetta antibody design (23C3-v1)</b></i> - Build an antibody to target CD44 binding region of SPP1 protein. Here, 2500 antibody variants of murine anti-SPP1 antibody 23C3 was generated using Rosetta antibody modelling workflow. Top hit variant was picked using top binding affinity with SPP1 and least sequence divergence from 23C3. We will be denoting it as 23C3-v1 from hereon. 
+   - 4.2. <i><b>Rosetta antibody design (23C3-v1)</b></i> 
+      - Build an antibody to target CD44 binding region of SPP1 protein. Lets first identify CDR regions in murine 23C3 antibody. Below are the list predicted CDRs,
+      | Chain          | CDR region | Residue     |
+      |----------------|------------|-------------|
+      | Heavy chain    |    H1      |   23-35     |
+      | Heavy chain    |    H2      |   50-62     |
+      | Heavy chain    |    H3      |   99-105    |
+      | Heavy chain    |    H4      |   74-81     |
+      | Light chain    |    L1      |   24-34     |
+      | Light chain    |    L2      |   49-53     |
+      | Light chain    |    L3      |   89-97     |
+      | Light chain    |    L4      |   66-71     |
+
+      - Here, 2500 antibody variants of murine anti-SPP1 antibody 23C3 was generated using Rosetta antibody modelling workflow. Top hit variant was picked using top binding affinity with SPP1 and least sequence divergence from 23C3. We will be denoting it as 23C3-v1 from hereon. 
       - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)
       - [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
       - 23C3-v1 binding energy and sequency divergence profile, as well as its mutations as compared to murine 23C3 antibody is shown below. 
@@ -94,6 +107,9 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       - 4.3.4. Incorporate relevant point mutations in epitopes found in CDR regions (if any) to neutralize it without loosing SPP1 binding.
       - 4.3.5. Incorporate replace 23C3-v1 residues with corresponding alignment position residue of humanized AB in non-CDR epitope regions.
       - 4.3.6. Test the modified 23C3-v1 binding affinity changes with SPP1 using molecular dynamics. 
+      - Below is the list of predicted epitope hits
+
+ 
 
    - 4.4. <i><b>Hu23C3-v1-SPP1 binding affinity test</b></i> - Check if we significantly loose SPP1 binding affinity upon humanization of 23C3-v1 
       - [MD simulation of Hu23C3-v1 docked with SPP1 and 23C3-v1 docked with SPP1](Notebook/Step12_Antibody_Molecular_Dynamics/simulate.ipynb)

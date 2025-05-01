@@ -11,7 +11,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 - [Manuscript draft link: For Nationwide Children's Hospital employees](https://nationwidechildrens-my.sharepoint.com/:w:/r/personal/ambuj_kumar_nationwidechildrens_org/Documents/SPP1_Project/Manuscript.docx?d=w6709113cea954b4794edb8017e88f115&csf=1&web=1&e=Fe9XyH) 
 
 ### Authors
-- Shiwani Limbu, University of California Merced & University of Kansas Medical Center 
+- Shiwani Limbu, University of California Merced 
 - Ambuj Kumar, Nationwide Children's Hospital
 
 

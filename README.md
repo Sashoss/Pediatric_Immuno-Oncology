@@ -33,15 +33,15 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
 4. <b>Build antibody to target predicted SPP1 cytokine</b> - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 
 
-   - 4.1. Molecular dynamics simulation - Build and optimize SPP1 protein structure.
+   - 4.1. <i>Molecular dynamics simulation</i> - Build and optimize SPP1 protein structure.
       - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)
       - [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
 
-   - 4.2. Rosetta antibody design (build 23C3-v1) - Build an antibody to target CD44 binding region of SPP1 protein.
+   - 4.2. <i>Rosetta antibody design (build 23C3-v1)</i> - Build an antibody to target CD44 binding region of SPP1 protein.
       - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)
       - [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
 
-   - 4.3. Humanization of 23C3-v1 (Hu23C3-v1) - [Notebook](Notebook/Step11_Antibody_Design/humanize_epitope.ipynb) - Modify 23C3-v1 class I and class II epitope region amino acid sequences in 23C3-v1 to minimize immune response against it. This step requires careful selection of point mutations to eliminate epitope hits, specifically on the surface exposed regions on the protein, without loosing its SPP1 binding affinity. Below are the steps outline implemented in this study.  
+   - 4.3. <i>Humanization of 23C3-v1 (Hu23C3-v1)</i> - [Notebook](Notebook/Step11_Antibody_Design/humanize_epitope.ipynb) - Modify 23C3-v1 class I and class II epitope region amino acid sequences in 23C3-v1 to minimize immune response against it. This step requires careful selection of point mutations to eliminate epitope hits, specifically on the surface exposed regions on the protein, without loosing its SPP1 binding affinity. Below are the steps outline implemented in this study.  
       - 4.3.1. Pull class I and class II epitopes in 23C3-v1
       - 4.3.2. Select epitope regions that are exposed on antibody surface with <b>SASA >= 50%</b>
       - 4.3.3. Compare epitope regions of 23C3-v1 with other closely related humanized antibodies
@@ -49,7 +49,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       - 4.3.5. Incorporate replace 23C3-v1 residues with corresponding alignment position residue of humanized AB in non-CDR epitope regions.
       - 4.3.6. Test the modified 23C3-v1 binding affinity changes with SPP1 using molecular dynamics. 
 
-   - 4.4. Hu23C3-v1-SPP1 binding affinity test - Check if we significantly loose SPP1 binding affinity upon humanization of 23C3-v1 
+   - 4.4. <i>Hu23C3-v1-SPP1 binding affinity test</i> - Check if we significantly loose SPP1 binding affinity upon humanization of 23C3-v1 
       - [MD simulation of Hu23C3-v1 docked with SPP1 and 23C3-v1 docked with SPP1](Notebook/Step12_Antibody_Molecular_Dynamics/simulate.ipynb)
       - [Binding affinity test](Notebook/Step13_Binding_Affinity_MMPBSA/mmpbsa.sh)
 

@@ -5,7 +5,7 @@
 
 Given the high mortality rate of pHGG, multiple labs around the world are making their transcriptomic data available for everyone to use and explore. Us bioinformatician's can organize and annotate these datasets in a way that can help wet lab and clinical researchers to easily explore their hypothesis without worrying too much about programming or tool usage limitations. Feel free to reach out to us is you find this project interesting, and if you would want to contribute. This is a complete open source project with all code, results, and datasets freely available to public.   
 
-## Project 1: Targeting the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Integrated Single-Cell and Structural Bioinformatics 
+## Project 1: Antibody-Based Targeting of the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Single-Cell and Structural Bioinformatics 
 
 ### <b>Manuscript under review</b> 
 - [Manuscript draft link: For Nationwide Children's Hospital employees](https://nationwidechildrens-my.sharepoint.com/:w:/r/personal/ambuj_kumar_nationwidechildrens_org/Documents/SPP1_Project/Manuscript.docx?d=w6709113cea954b4794edb8017e88f115&csf=1&web=1&e=Fe9XyH) 

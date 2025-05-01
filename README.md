@@ -28,7 +28,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 <img src="Notebook/Step5_Clustering/out/umap_base.png" alt="UMAP plot" width="500" height="400">
 
    - 2.3. InferCNV - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
-
+<img src="Notebook/Step6_Infercnv/out/infercnv.png" alt="UMAP plot" width="700" height="400">
 
 
 3. <b>Identify SPP1 cytokine activity and its regulatory features in pHGG.</b> This step enables us to identify active immunosupressive cytokine-receptor signals in pHGG, and transcription factors that may likely regulate it. Identifying these TFs can help us design specific antibody or small molecules to inhibit it.

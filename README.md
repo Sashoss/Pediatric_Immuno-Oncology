@@ -25,8 +25,14 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 - 8. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb)
 - 9. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
 - 10. Molecular dynamics simulation - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb), [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
-- 11. Rosetta antibody design - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh), [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
-- 12. Utility scripts - [dir](Notebook/Utility)
+- 11. Rosetta antibody design (23C3-v1) 
+   - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)
+   - [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
+- 12. Humanization of 23C3-v1 (Hu23C3-v1) - [Notebook](Notebook/Step11_Antibody_Design/humanize_epitope.ipynb)
+- 13. Hu23C3-v1-SPP1 binding affinity test 
+   - [MD simulation of Hu23C3-v1 docked with SPP1 and 23C3-v1 docked with SPP1](Notebook/Step12_Antibody_Molecular_Dynamics/simulate.ipynb)
+   - [Binding affinity test](Notebook/Step13_Binding_Affinity_MMPBSA/mmpbsa.sh)
+- 14. Utility scripts - [dir](Notebook/Utility)
 
 ## Results
 

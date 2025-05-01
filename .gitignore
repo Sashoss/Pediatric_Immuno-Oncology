@@ -3,7 +3,6 @@
 *.h5
 *.infercnv_obj
 *.dat
-*.pdf
 *.txt
 *.mcmc_obj
 *.loom

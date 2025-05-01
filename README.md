@@ -84,6 +84,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
    - 4.2. <i><b>Rosetta antibody design (23C3-v1)</b></i> - Build an antibody to target CD44 binding region of SPP1 protein. Here, 2500 antibody variants of murine anti-SPP1 antibody 23C3 was generated using Rosetta antibody modelling workflow. Top hit variant was picked using top binding affinity with SPP1 and least sequence divergence from 23C3. We will be denoting it as 23C3-v1 from hereon. 
       - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)
       - [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
+      - 23C3-v1 binding energy and sequency divergence profile, as well as its mutations as compared to murine 23C3 antibody is shown below. 
       <img src="Notebook/Step11_Antibody_Design/out/antibody_model.png" alt="SPP1 minima" width="800" height="250">
 
    - 4.3. <i><b>Humanization of 23C3-v1 (Hu23C3-v1)</b></i> - [Notebook](Notebook/Step11_Antibody_Design/humanize_epitope.ipynb) - Modify 23C3-v1 class I and class II epitope region amino acid sequences in 23C3-v1 to minimize immune response against it. This step requires careful selection of point mutations to eliminate epitope hits, specifically on the surface exposed regions on the protein, without loosing its SPP1 binding affinity. Below are the steps outline implemented in this study.  

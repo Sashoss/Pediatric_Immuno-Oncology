@@ -36,7 +36,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
    - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
    <p align="center">
-      <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="350" height="20" style="display: inline-block; margin-right: 10px;">
+      <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="350" height="280" style="display: inline-block; margin-right: 10px;">
       <img src="Notebook/Step8_Pyscenic/out/TF_rss_correlation.png" alt="TF correl plot" width="350" height="280" style="display: inline-block;">
    </p>
 

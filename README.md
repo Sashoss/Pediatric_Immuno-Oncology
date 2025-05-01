@@ -78,7 +78,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       - [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
       <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/rmsf_de.png" alt="RE RMSF" width="700" height="320" style="display: inline-block;">
       - Most stable and dominant conformation across all 4 trajectories were picked for downstream analysis.
-      <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/SPP1_minima.png" alt="SPP1 minima" width="300" height="700" style="display: inline-block;">
+      <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/SPP1_minima.png" alt="SPP1 minima" width="300" height="500" style="display: inline-block;">
 
    - 4.2. <i><b>Rosetta antibody design (23C3-v1)</b></i> - Build an antibody to target CD44 binding region of SPP1 protein. Here, 2500 antibody variants of murine anti-SPP1 antibody 23C3 was generated using Rosetta antibody modelling workflow. Top hit variant was picked using top binding affinity with SPP1 and least sequence divergence from 23C3. We will be denoting it as 23C3-v1 from hereon. 
       - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)

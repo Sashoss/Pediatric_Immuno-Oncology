@@ -34,10 +34,10 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
    - 3.1. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb): Clearly showing that TAM SPP1 to T cell CD44 signalling is active in pHGG. 
    <img src="Notebook/Step7_Cellchat/out/SPP1_cellchat_netVisual_aggregate.png" alt="SPP1 com" width="300" height="270">
 
-   - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
+   - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb): Here, in the first image, dot size shows predicted SPP1 TFs Regulon Specificity Score (RSS) across all cell types, and the color represents TF expression in the corresponding cell type. In second image, size of the dot represents percentage of cells expressing corresponding TF gene expression within a given cell type and color represents average gene expression. Combining these two images, we can easily conclude that no single TF can be assigned as a primary regulator of SPP1 gene expression in TAMs.
    <p align="center">
-      <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="350" height="280" style="display: inline-block; margin-right: 10px;">
-      <img src="Notebook/Step8_Pyscenic/out/TF_rss_correlation.png" alt="TF correl plot" width="350" height="280" style="display: inline-block;">
+      <img src="Notebook/Step8_Pyscenic/out/TF_rss_correlation.png" alt="TF correl plot" width="350" height="250" style="display: inline-block;">
+      <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="350" height="250" style="display: inline-block; margin-right: 10px;">
    </p>
 
 4. <b>Build antibody to target SPP1</b> - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 

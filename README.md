@@ -33,7 +33,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
    - 2.4. <i><b>Gene Set Enrichment Analysis</b></i> - [Notebook](/Notebook/Step5_Clustering/clustering.ipynb)
    <img src="Notebook/Step5_Clustering/out/GSEA_heatmap.png" alt="GSEA plot" width="900" height="400">
 
-      - 2.4.1. <b>Immune cells</b> - 
+      - 2.4.1. <b>Immune cells</b> 
 
          - 2.4.1.1. <i><b>T cells</b></i> show strong signatures for T cell receptor complex, MHC class II protein complex, and immunological synapse. NK cells are uniquely enriched in cytotoxic granule lumen, perforin complex, and natural killer cell–mediated cytotoxicity pathways, consistent with their tumor‐killing potential.  
 
@@ -65,7 +65,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
    - 3.1. <i><b>Cellchat cell-cell communication</b></i> - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb): Clearly showing that TAM SPP1 to T cell CD44 signalling is active in pHGG. 
    <img src="Notebook/Step7_Cellchat/out/SPP1_cellchat_netVisual_aggregate.png" alt="SPP1 com" width="500" height="420">
 
-   - 3.2. <i><b>Pyscenic transcription factor prediction</b></i> - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb): Here, in the first image, dot size shows predicted SPP1 TFs Regulon Specificity Score (RSS) across all cell types, and the color represents TF expression in the corresponding cell type. In second image, size of the dot represents percentage of cells expressing corresponding TF gene expression within a given cell type and color represents average gene expression. Combining these two images, we can easily conclude that no single TF can be assigned as a primary regulator of SPP1 gene expression in TAMs.
+   - 3.2. <i><b>Pyscenic transcription factor prediction</b></i> - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb): Here, in the first image, dot size shows predicted SPP1 TFs Regulon Specificity Score (RSS) across all cell types, and the color represents TF expression spearman correlation with SPP1 expression in the corresponding cell type. In second image, size of the dot represents percentage of cells expressing corresponding TF gene expression within a given cell type and color represents average gene expression. Combining these two images, we can easily conclude that no single TF can be assigned as a primary regulator of SPP1 gene expression in TAMs.
    <p align="center">
       <img src="Notebook/Step8_Pyscenic/out/TF_rss_correlation.png" alt="TF correl plot" width="350" height="250" style="display: inline-block;">
       <img src="Notebook/Step8_Pyscenic/out/dotplot_TFs.png" alt="TF plot" width="350" height="250" style="display: inline-block; margin-right: 10px;">

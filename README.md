@@ -77,6 +77,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)
       - [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
       <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/rmsf_de.png" alt="RE RMSF" width="700" height="320">
+      
       - Most stable and dominant conformation across all 4 trajectories were picked for downstream analysis.
       <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/SPP1_minima.png" alt="SPP1 minima" width="300" height="450">
 

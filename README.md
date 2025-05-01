@@ -30,6 +30,9 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
    - 2.3. <i><b>InferCNV</i></b> - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
    <img src="Notebook/Step6_Infercnv/out/infercnv.png" alt="Infercnv plot" width="600" height="450">
 
+   - 2.4. <i><b>Gene Set Enrichment Analysis</b></i> - 
+   <img src="Notebook/Step5_Clustering/out/GSEA_heatmap.png" alt="GSEA plot" width="900" height="400">
+
 3. <b>Identify SPP1 cytokine activity and its regulatory features in pHGG.</b> This step enables us to identify active immunosupressive cytokine-receptor signals in pHGG, and transcription factors that may likely regulate it. Identifying these TFs can help us design specific antibody or small molecules to inhibit it.
    - 3.1. <i><b>Cellchat cell-cell communication</b></i> - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb): Clearly showing that TAM SPP1 to T cell CD44 signalling is active in pHGG. 
    <img src="Notebook/Step7_Cellchat/out/SPP1_cellchat_netVisual_aggregate.png" alt="SPP1 com" width="300" height="270">

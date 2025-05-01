@@ -73,7 +73,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
 4. <b>Build antibody to target SPP1</b> - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 
 
-   - 4.1. <i><b>Molecular dynamics simulation</b></i> - Build and optimize SPP1 protein structure.
+   - 4.1. <i><b>Replica Exchange Molecular dynamics simulation</b></i> - Here, first we will induce multiple temperature jump shocks to SPP1 protein structure to test the relative stability of this disordered protein. We know that residue 43-48 and 162-168 has been used for antibody targeting. We need to compare fluctuation of SPP1 CD44 binding region (residue 121-140) with 43-48 and 162-168 to check if the fluctuation of 121-140 has a comparable fluctuation profile to consider it for antibody targeting. Root mean squared fluctuation (RMSF) results across multiple temperature trajectories shows comparable RMSF profile of resi 121-140 to resi 43-48 and 162-168.
       - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)
       - [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
       <img src="Notebook/Step9_SPP1_Molecular_Dynamics/out/Replica_Exchange/rmsf_re.png" alt="RE RMSF" width="700" height="320" style="display: inline-block;">

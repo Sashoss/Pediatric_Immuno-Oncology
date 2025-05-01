@@ -14,30 +14,53 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 - Shiwani Limbu, University of California Merced & University of Kansas Medical Center 
 - Ambuj Kumar, Nationwide Children's Hospital
 
+
 ## Scripts and workflows
-- 1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)
-- 2. Create seurat object - [Notebook](/Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
-- 3. Doublet finder - [Notebook](/Notebook/Step3_Preprocessing/doublet_finder.ipynb) 
-- 4. Preprocessing - [Notebook](/Notebook/Step3_Preprocessing/filter_cells.ipynb)
-- 5. Harmony Integration - [Notebook](/Notebook/Step4_Integration/harmony_integration.ipynb)
-- 6. Clustering and cell annotation - [Notebook](/Notebook/Step5_Clustering/clustering.ipynb)
-- 7. InferCNV - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
-- 8. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb)
-- 9. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
-- 10. Molecular dynamics simulation - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb), [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
-- 11. Rosetta antibody design (23C3-v1) 
-   - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)
-   - [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
-- 12. Humanization of 23C3-v1 (Hu23C3-v1) - [Notebook](Notebook/Step11_Antibody_Design/humanize_epitope.ipynb)
-- 13. Hu23C3-v1-SPP1 binding affinity test 
-   - [MD simulation of Hu23C3-v1 docked with SPP1 and 23C3-v1 docked with SPP1](Notebook/Step12_Antibody_Molecular_Dynamics/simulate.ipynb)
-   - [Binding affinity test](Notebook/Step13_Binding_Affinity_MMPBSA/mmpbsa.sh)
-- 14. Utility scripts - [dir](Notebook/Utility)
+- 1. Collect and clean pHGG single cell data - Here we collect single cell data from public database and preprocess it for our specific study.   
+   - 1.1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)
+   - 1.2. Create seurat object - [Notebook](/Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
+   - 1.3. Doublet finder - [Notebook](/Notebook/Step3_Preprocessing/doublet_finder.ipynb) 
+   - 1.4. Preprocessing - [Notebook](/Notebook/Step3_Preprocessing/filter_cells.ipynb)
+
+- 2. Identify cell types present in pHGG single cell data - Here, multiple clean preprocessed sample data is then integrated, clustered, annotated to identify various tumor and immune cell types present within it. 
+   - 2.1. Harmony Integration - [Notebook](/Notebook/Step4_Integration/harmony_integration.ipynb)
+   - 2.2. Clustering and cell annotation - [Notebook](/Notebook/Step5_Clustering/clustering.ipynb)
+   - 2.3. InferCNV - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
+
+- 3. Identify cytokines and their regulatory features in pHGG. This step enables us to identify active immunosupressive cytokine-receptor signals in pHGG, and transcription factors that may likely regulate it. Identifying these TFs can help us design specific antibody or small molecules to inhibit it.
+   - 3.1. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb)
+   - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
+
+- 4. Build antibody to target predicted SPP1 cytokine - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 
+
+   - 4.1. Molecular dynamics simulation - Build and optimize SPP1 protein structure.
+      - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)
+      - [Slurm automation script](Notebook/Step9_SPP1_Molecular_Dynamics/src/simulation_sbatch_script.sh) 
+
+   - 4.2. Rosetta antibody design (build 23C3-v1) - Build an antibody to target CD44 binding region of SPP1 protein.
+      - [Rosetta script](Notebook/Step11_Antibody_Design/src/antibody_design.sh)
+      - [esm2 embedding based AB variant selection](Notebook/Step11_Antibody_Design/esm_embedding_workflow.ipynb)
+
+   - 4.3. Humanization of 23C3-v1 (Hu23C3-v1) - [Notebook](Notebook/Step11_Antibody_Design/humanize_epitope.ipynb) - Modify 23C3-v1 class I and class II epitope region amino acid sequences in 23C3-v1 to minimize immune response against it. This step requires careful selection of point mutations to eliminate epitope hits, specifically on the surface exposed regions on the protein, without loosing its SPP1 binding affinity. Below are the steps outline implemented in this study.  
+      - 4.3.1. Pull class I and class II epitopes in 23C3-v1
+      - 4.3.2. Select epitope regions that are exposed on antibody surface with <b>SASA >= 50%</b>
+      - 4.3.3. Compare epitope regions of 23C3-v1 with other closely related humanized antibodies
+      - 4.3.4. Incorporate relevant point mutations in epitopes found in CDR regions (if any) to neutralize it without loosing SPP1 binding.
+      - 4.3.5. Incorporate replace 23C3-v1 residues with corresponding alignment position residue of humanized AB in non-CDR epitope regions.
+      - 4.3.6. Test the modified 23C3-v1 binding affinity changes with SPP1 using molecular dynamics. 
+
+   - 4.4. Hu23C3-v1-SPP1 binding affinity test 
+      - [MD simulation of Hu23C3-v1 docked with SPP1 and 23C3-v1 docked with SPP1](Notebook/Step12_Antibody_Molecular_Dynamics/simulate.ipynb)
+      - [Binding affinity test](Notebook/Step13_Binding_Affinity_MMPBSA/mmpbsa.sh)
+
+- 5. Utility scripts - [dir](Notebook/Utility)
+
+<hr>
 
 ## Results
 
 
-GSEA normalized enrichment results
+<b>Insights from GSEA results</b>
 
 - d-1) Immune cells - 
 

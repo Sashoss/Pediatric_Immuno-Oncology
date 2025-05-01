@@ -16,22 +16,22 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 
 
 ## Scripts and workflows
-- 1. Collect and clean pHGG single cell data - Here we collect single cell data from public database and preprocess it for our specific study.   
+- 1. <b>Collect and clean pHGG single cell data</b> - Here we collect single cell data from public database and preprocess it for our specific study.   
    - 1.1. Single cell data collection - [Notebook](/Notebook/Step1_Dataset/pull_dataset.ipynb)
    - 1.2. Create seurat object - [Notebook](/Notebook/Step2_Generate_Seurat_Object/create_seurat.ipynb)
    - 1.3. Doublet finder - [Notebook](/Notebook/Step3_Preprocessing/doublet_finder.ipynb) 
    - 1.4. Preprocessing - [Notebook](/Notebook/Step3_Preprocessing/filter_cells.ipynb)
 
-- 2. Identify cell types present in pHGG single cell data - Here, multiple clean preprocessed sample data is then integrated, clustered, annotated to identify various tumor and immune cell types present within it. 
+- 2. <b>Identify cell types present in pHGG single cell data</b> - Here, multiple clean preprocessed sample data is then integrated, clustered, annotated to identify various tumor and immune cell types present within it. 
    - 2.1. Harmony Integration - [Notebook](/Notebook/Step4_Integration/harmony_integration.ipynb)
    - 2.2. Clustering and cell annotation - [Notebook](/Notebook/Step5_Clustering/clustering.ipynb)
    - 2.3. InferCNV - [Notebook](/Notebook/Step6_Infercnv/infercnv.ipynb) 
 
-- 3. Identify cytokines and their regulatory features in pHGG. This step enables us to identify active immunosupressive cytokine-receptor signals in pHGG, and transcription factors that may likely regulate it. Identifying these TFs can help us design specific antibody or small molecules to inhibit it.
+- 3. <b>Identify cytokines and their regulatory features in pHGG.</b> This step enables us to identify active immunosupressive cytokine-receptor signals in pHGG, and transcription factors that may likely regulate it. Identifying these TFs can help us design specific antibody or small molecules to inhibit it.
    - 3.1. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb)
    - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
 
-- 4. Build antibody to target predicted SPP1 cytokine - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 
+- 4. <b>Build antibody to target predicted SPP1 cytokine</b> - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 
 
    - 4.1. Molecular dynamics simulation - Build and optimize SPP1 protein structure.
       - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)

@@ -49,11 +49,11 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
       - 4.3.5. Incorporate replace 23C3-v1 residues with corresponding alignment position residue of humanized AB in non-CDR epitope regions.
       - 4.3.6. Test the modified 23C3-v1 binding affinity changes with SPP1 using molecular dynamics. 
 
-   - 4.4. Hu23C3-v1-SPP1 binding affinity test 
+   - 4.4. Hu23C3-v1-SPP1 binding affinity test - Check if we significantly loose SPP1 binding affinity upon humanization of 23C3-v1 
       - [MD simulation of Hu23C3-v1 docked with SPP1 and 23C3-v1 docked with SPP1](Notebook/Step12_Antibody_Molecular_Dynamics/simulate.ipynb)
       - [Binding affinity test](Notebook/Step13_Binding_Affinity_MMPBSA/mmpbsa.sh)
 
-- 5. Utility scripts - [dir](Notebook/Utility)
+- 5. <b>Utility scripts<b> - [dir](Notebook/Utility)
 
 <hr>
 

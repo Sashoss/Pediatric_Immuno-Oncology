@@ -31,7 +31,7 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
    - 3.1. Cellchat cell-cell communication - [Notebook](Notebook/Step7_Cellchat/run_cellchat.ipynb)
    - 3.2. Pyscenic transcription factor prediction - [Notebook](Notebook/Step8_Pyscenic/pyscenic_plots.ipynb)
 
-4. <b>Build antibody to target predicted SPP1 cytokine</b> - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 
+4. <b>Build antibody to target SPP1</b> - Here we aim to build an antibody that can specifically target CD44 binding motif of SPP1 cytokine. 
 
    - 4.1. <i><b>Molecular dynamics simulation</b></i> - Build and optimize SPP1 protein structure.
       - [Notebook](Notebook/Step9_SPP1_Molecular_Dynamics/simulate.ipynb)

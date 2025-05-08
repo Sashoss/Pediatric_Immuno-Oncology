@@ -8,7 +8,8 @@ Given the high mortality rate of pHGG, multiple labs around the world are making
 ## Project 1: Antibody-Based Targeting of the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Single-Cell and Structural Bioinformatics 
 
 ### <b>Manuscript under review</b> 
-- [Manuscript is available online at biorxiv](https://www.biorxiv.org/content/10.1101/2025.05.01.651763v1) 
+If you find this work useful, please cite,
+- [Shiwani Limbu, Ambuj Kumar. <i>Antibody-Based Targeting of the SPP1-CD44 Axis in Pediatric High-Grade Glioma through Single-Cell and Structural Bioinformatics</i>. doi: https://doi.org/10.1101/2025.05.01.651763](https://www.biorxiv.org/content/10.1101/2025.05.01.651763v1) 
 
 ### Authors
 - Shiwani Limbu, University of California Merced 
